@@ -1,0 +1,141 @@
+.main {
+position: absolute;
+width: 1440px;
+height: 569px;
+left: 0px;
+top: 900px;
+}
+.heading {
+position: absolute; 
+width: 306px;
+height: 47px;
+left: 567px;
+top: 120px;
+bottom: 402px;  
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+color: #383838;
+}
+h1 {
+position: absolute;
+width: 100px;
+height: 4px;
+left: 670px;
+top: 187px;
+background: #F5BD41;
+}
+.block-one {
+position: absolute;
+width: 296px;
+height: 176px;
+left: 104px;
+top: 271px;
+}
+.head-set {
+position: absolute;
+width: 100px;
+height: 100px;
+left: 202px;
+top: 271px;
+}
+.support {
+position: absolute;
+width: 141px;
+height: 28px;
+left: 181px;
+top: 419px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #383838;
+}
+.block-two {
+position: absolute;
+width: 296px;
+height: 178px;
+left: 416px;
+top: 271px;
+}
+.forum-outlined {
+position: absolute;
+width: 100px;
+height: 100px;
+left: 513px;
+top: 271px;
+}
+.communicate {
+position: absolute;
+width: 296px;
+height: 28px;
+left: 416px;
+top: 419px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #383838;
+}
+.block-three {
+    position: absolute;
+width: 296px;
+height: 184px;
+left: 728px;
+top: 271px;
+}
+.divece-outlined {
+position: absolute;
+width: 100px;
+height: 100px;
+left: 826px;
+top: 271px;
+}
+.book-online {
+position: absolute;
+width: 168px;
+height: 28px;
+left: 792px;
+top: 419px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #383838;
+}
+.block-four {
+position: absolute;
+width: 296px;
+height: 183px;
+left: 1041px;
+top: 271px;
+}
+.thumb {
+position: absolute;
+width: 100px;
+height: 100px;
+left: 1139px;
+top: 271px;
+}
+.real-guest {
+position: absolute;
+width: 225px;
+height: 28px;
+left: 1077px;
+top: 419px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+text-align: center;
+color: #383838;
+}
