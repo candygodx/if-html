@@ -1,9 +1,8 @@
 .main {
-position: absolute;
-width: 1440px;
+text-align: center;
+margin: auto;
+max-width: 1230px;
 height: 569px;
-left: 0px;
-top: 900px;
 }
 .heading {
 position: absolute; 
@@ -19,12 +18,12 @@ font-size: 40px;
 line-height: 47px;
 color: #383838;
 }
-h1 {
+h2 {
 position: absolute;
 width: 100px;
 height: 4px;
 left: 670px;
-top: 187px;
+top: 207px;
 background: #F5BD41;
 }
 .block-one {
