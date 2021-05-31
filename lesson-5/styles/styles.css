@@ -1,0 +1,126 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    width: 1264px;
+    padding: 120px 16px;
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #383838;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    margin: 0 auto;
+    border: none;
+    margin-bottom: 80px;
+    background: #F5BD41;
+}
+
+section {
+    display: flex;
+}
+
+.block-one {
+    flex: 1;
+    align-items: center;
+}
+
+.block-two {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block-title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.second-title {
+    padding-top: 48px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #383838;
+}
+
+.support-title {
+    padding-left: 16px;
+    padding-top: 48px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #383838;
+}
+
+.main-footer {
+    width: 1440px;
+    height: 630px;
+    margin: 0 auto;
+    background: #10367C;
+}
+
+.container-footer {
+    display: flex;
+}
+.about {
+    padding-top: 120px;
+    padding-left: 104px;
+}
+
+.property-types {
+    padding-top: 120px;
+    padding-left: 223px;
+}
+
+.support {
+    padding-top: 120px;
+    padding-left: 283px;
+}
+
+.copyrigh { 
+    padding-top: 50px;
+    padding-left: 103px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.title-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.8em;
+    color: #FFFFFF;
+}
+dd {
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 2.4em;
+color: #FFFFFF;
+}
