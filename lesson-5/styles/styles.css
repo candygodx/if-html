@@ -85,11 +85,13 @@
     color: #FFFFFF;
 }
 
-dd {
-    font-style: normal;
-    font-weight: normal;
+a {
     font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
     line-height: 2.4em;
+    letter-spacing: 0em;
+    text-align: center;
     color: #FFFFFF;
 }
 
