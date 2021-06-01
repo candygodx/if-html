@@ -24,11 +24,14 @@
     line-height: 47px;
 }
 
-.line {
+.title::after {
+    content: " ";
+    display: block;
     width: 100px;
     height: 4px;
     margin: 0 auto;
     border: none;
+    margin-top: 20px;
     margin-bottom: 80px;
     background: #F5BD41;
 }
@@ -53,17 +56,6 @@ section {
 }
 
 .second-title {
-    padding-top: 48px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #383838;
-}
-
-.support-title {
     padding-left: 16px;
     padding-top: 48px;
     text-align: center;
@@ -76,7 +68,7 @@ section {
 }
 
 .main-footer {
-    width: 1440px;
+    padding-left: 120px;
     height: 630px;
     margin: 0 auto;
     background: #10367C;
@@ -117,6 +109,7 @@ section {
     line-height: 1.8em;
     color: #FFFFFF;
 }
+
 dd {
 font-style: normal;
 font-weight: normal;
