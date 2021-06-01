@@ -4,11 +4,10 @@
     box-sizing: border-box;
 }
 
-.main {
-    margin: auto;
+ section {
+    margin: 0 auto;
     width: 1264px;
     padding: 120px 16px;
-    margin: 0 auto;
 }
 
 .title {
@@ -31,37 +30,21 @@
     background: #F5BD41;
 }
 
-section {
+.main {
     display: flex;
 }
 
-.block-one {
+.item {
     flex: 1;
     align-items: center;
 }
 
-.block-two {
-    display: flex;
-    justify-content: space-around;
-}
-
-.block-title {
+.icon-wrapper {
     display: flex;
     justify-content: space-around;
 }
 
 .second-title {
-    padding-top: 48px;
-    text-align: center;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #383838;
-}
-
-.support-title {
     padding-left: 16px;
     padding-top: 48px;
     text-align: center;
