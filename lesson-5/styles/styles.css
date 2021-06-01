@@ -7,17 +7,16 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.main {
+ section {
+    margin: 0 auto;
     width: 1264px;
     padding: 120px 16px;
-    margin: 0 auto;
 }
 
 .title {
     margin-bottom: 20px;
     text-align: center;
     color: #383838;
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 40px;
@@ -36,21 +35,17 @@
     background: #F5BD41;
 }
 
-section {
-    display: flex;
-}
-
-.block-one {
-    flex: 1;
-    align-items: center;
-}
-
-.block-two {
+.container {
     display: flex;
     justify-content: space-around;
 }
 
-.block-title {
+.item {
+    flex: 1;
+    align-items: center;
+}
+
+.icon-wrapper {
     display: flex;
     justify-content: space-around;
 }
@@ -59,7 +54,6 @@ section {
     padding-left: 16px;
     padding-top: 48px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -67,32 +61,13 @@ section {
     color: #383838;
 }
 
-.main-footer {
-    padding-left: 120px;
-    height: 630px;
+.footer {
     margin: 0 auto;
     background: #10367C;
 }
 
-.container-footer {
-    display: flex;
-}
-.about {
-    padding-top: 120px;
-    padding-left: 104px;
-}
-
-.property-types {
-    padding-top: 120px;
-    padding-left: 223px;
-}
-
-.support {
-    padding-top: 120px;
-    padding-left: 283px;
-}
-
 .copyrigh { 
+    padding-bottom: 120px;
     padding-top: 50px;
     padding-left: 103px;
     font-style: normal;
@@ -116,4 +91,8 @@ font-weight: normal;
 font-size: 20px;
 line-height: 2.4em;
 color: #FFFFFF;
+}
+
+dl{
+    padding-top: 120px;
 }
