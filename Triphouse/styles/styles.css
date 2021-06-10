@@ -1,0 +1,234 @@
+@import url(./fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-section {
+    background-image: url(../images/castelmezzano-1979546\ 1.png);
+    background-color: fuchsia;
+    height: 100vh;
+    padding-top: 51px;
+}
+
+.header {
+    height: 46px;
+    margin: 0 auto;
+    width: 1232px;
+    display: grid;
+    grid-template-columns: 70% 59px 142px 0fr 0fr;
+    grid-column-gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.block-search {
+    width: 1232px;
+    margin: 0 auto;
+    margin-top: 196px;
+}
+
+h1 {
+    margin-bottom: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.text-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0 195px 0 24px;
+}
+
+.request-item {
+    padding-top: 32px;
+    padding-bottom: 25px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 3px solid #F3F3F4;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #383838;
+}
+
+.request-item:nth-of-type(1) {
+    width: 467px;
+    padding-left: 24px;
+}
+
+.request-item:nth-of-type(2) {
+    width: 259px;
+}
+
+.request-item:nth-of-type(3) {
+    width: 314px;
+}
+
+.search-button {
+    height: 64px;
+    width: 192px;
+    background-color: #3077C6;
+    color: #FFFFFF;
+    border: 3px solid #3077C6;
+    border-radius: 7px;
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.request-item:focus {
+    border: 3px solid #F5BD41;
+    outline: none;
+}
+
+form {
+    margin-top: 24px;
+    display: flex;
+    height: 64px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+.apps {
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin: 0 auto;
+    margin-left: 894px;
+    margin-top: ;
+    border: none;
+    background: #F5BD41;
+}
+
+ .advantages-block {
+    width: 1264px;
+    margin: 0 auto;
+    padding: 120px 16px;
+}
+
+.advantages-title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #383838;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+}
+
+.advantages-title::after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 0 auto;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    background: #F5BD41;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    width: 25%;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.advantages-name {
+    padding-left: 16px;
+    padding-top: 48px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #383838;
+}
+
+.footer-block {
+    margin: 0 auto;
+    background: #10367C;
+}
+
+.copyright {
+    padding-bottom: 120px;
+    padding-top: 50px;
+    padding-left: 183px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.columns-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.8em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2.4em;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+dl{
+    padding-top: 120px;
+}
+
+.advantages-name-block {
+    display: flex;
+    justify-content: space-around;
+}
