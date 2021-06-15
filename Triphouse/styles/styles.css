@@ -7,43 +7,99 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.top-section {
+.container {
+    max-width: 1265px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.tittle {
+    padding-bottom: 20px;
+    padding-top: 120px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    color: #383838;
+}
+
+.tittle::after {
+    content: " ";
+    display: block;
+    width: 100px;
+    height: 4px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border: none;
+    background: #F5BD41;
+}
+
+.icon-wrapper {
+    height: 100px;
+}
+
+.item {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 120px;
+    flex-wrap: wrap;
+}
+
+.item-text {
+    margin-top: 48px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #383838;
+}
+
+header {
     background-image: url(../images/castelmezzano-1979546\ 1.png);
     background-color: fuchsia;
     height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    height: 97px;
     padding-top: 51px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.header {
-    height: 46px;
-    margin: 0 auto;
-    width: 1232px;
-    display: grid;
-    grid-template-columns: 70% 59px 142px 0fr 0fr;
-    grid-column-gap: 24px;
+.nav-content {
+    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.header-text{
-    font-size: 24px;
+.nav-content-text {
+    margin-right: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
+    font-size: 24px;
     line-height: 28px;
-    letter-spacing: 0em;
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
 }
 
-.block-search {
-    width: 1232px;
-    margin: 0 auto;
-    margin-top: 196px;
+.nav-content-icon {
+    margin: 0 24px 0 24px;
 }
 
 h1 {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
     font-style: normal;
     font-weight: 500;
     font-size: 50px;
@@ -51,22 +107,38 @@ h1 {
     color: #FFFFFF;
 }
 
-.text-description {
+.search-block {
+    padding-top: 196px;
+}
+
+.user-request {
+    width: 1232px;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+label {
+    padding-left: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+    text-align: center;
     color: #FFFFFF;
-    margin: 0 195px 0 24px;
+}
+
+.date-name {
+    padding-left: 221px;
 }
 
 .request-item {
-    padding-top: 32px;
-    padding-bottom: 25px;
-    height: 50px;
+    height: 64px;
     background: #FFFFFF;
-    border: 3px solid #F3F3F4;
     border-radius: 8px;
+    outline: none;
+    border: none;
+    border: solid 3px #FFFFFF;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -88,12 +160,11 @@ h1 {
 }
 
 .search-button {
-    height: 64px;
     width: 192px;
     background-color: #3077C6;
     color: #FFFFFF;
     border: 3px solid #3077C6;
-    border-radius: 7px;
+    border-radius: 8px;
     font-style: normal;
     font-size: 24px;
     font-weight: 500;
@@ -102,20 +173,16 @@ h1 {
     text-align: center;
 }
 
+.search-block-items {
+    padding-bottom: 24px;
+}
+
 .request-item:focus {
     border: 3px solid #F5BD41;
     outline: none;
 }
 
-form {
-    margin-top: 24px;
-    display: flex;
-    height: 64px;
-    background-color: #FFFFFF;
-    border-radius: 8px;
-}
-
-.apps {
+.search-block-download {
     width: 270px;
     margin: 0 auto;
     margin-top: 120px;
@@ -123,91 +190,28 @@ form {
     justify-content: space-between;
 }
 
-.line {
+.line::after {
+    position: absolute;
     content: " ";
     display: block;
     width: 50px;
     height: 4px;
     margin: 0 auto;
-    margin-left: 894px;
-    margin-top: ;
     border: none;
+    margin-top: 12px;
+    margin-left: 5px;
     background: #F5BD41;
 }
 
- .advantages-block {
-    width: 1264px;
-    margin: 0 auto;
-    padding: 120px 16px;
-}
-
-.advantages-title {
-    margin-bottom: 20px;
-    text-align: center;
-    color: #383838;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 47px;
-}
-
-.advantages-title::after {
-    content: " ";
-    display: block;
-    width: 100px;
-    height: 4px;
-    margin: 0 auto;
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    background: #F5BD41;
-}
-
-.container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.item {
-    width: 25%;
-    display: flex;
-    flex-direction: column ;
-    align-items: center;
-}
-
-.icon-wrapper {
-    display: flex;
-    justify-content: space-around;
-}
-
-.advantages-name {
-    padding-left: 16px;
-    padding-top: 48px;
-    text-align: center;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    color: #383838;
-}
-
-.footer-block {
-    margin: 0 auto;
+footer {
     background: #10367C;
 }
 
-.copyright {
-    padding-bottom: 120px;
-    padding-top: 50px;
-    padding-left: 183px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: #FFFFFF;
+li {
+    list-style-type: none;
 }
 
-.columns-name {
+.list-block-columns-name {
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -216,7 +220,7 @@ form {
     text-decoration: none;
 }
 
-.text {
+.list-block-text {
     font-size: 20px;
     font-weight: 400;
     line-height: 2.4em;
@@ -224,11 +228,35 @@ form {
     text-decoration: none;
 }
 
-dl{
-    padding-top: 120px;
+.copyright {
+    padding-bottom: 120px;
+    padding-top: 35px;
+    padding-left: 215px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
 }
 
-.advantages-name-block {
+.list-block {
     display: flex;
     justify-content: space-around;
+    max-width: 1265px;
+    margin-left: 100px;
+    margin-bottom: 15px;
+    padding-top: 120px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .item {
+        width: 100%;
+    }
+    ul {
+        width: 100%;
+    }
+    .copyright {
+    padding-left: 100px;
+    }
 }
