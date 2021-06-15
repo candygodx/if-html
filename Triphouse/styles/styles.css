@@ -72,7 +72,6 @@ header {
 }
 
 .nav {
-    height: 97px;
     padding-top: 51px;
     display: flex;
     justify-content: space-between;
@@ -108,11 +107,12 @@ h1 {
 }
 
 .search-block {
+    width: 1232px;
     padding-top: 196px;
 }
 
 .user-request {
-    width: 1232px;
+    height: 64px;
     display: flex;
     background-color: #FFFFFF;
     border-radius: 8px;
@@ -132,8 +132,7 @@ label {
     padding-left: 221px;
 }
 
-.request-item {
-    height: 64px;
+.request-item {  
     background: #FFFFFF;
     border-radius: 8px;
     outline: none;
@@ -184,8 +183,7 @@ label {
 
 .search-block-download {
     width: 270px;
-    margin: 0 auto;
-    margin-top: 120px;
+    margin: 120px auto 0;
     display: flex;
     justify-content: space-between;
 }
@@ -230,8 +228,7 @@ li {
 
 .copyright {
     padding-bottom: 120px;
-    padding-top: 35px;
-    padding-left: 215px;
+    padding-top: 50px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -241,12 +238,16 @@ li {
 
 .list-block {
     display: flex;
-    justify-content: space-around;
-    max-width: 1265px;
-    margin-left: 100px;
-    margin-bottom: 15px;
     padding-top: 120px;
     flex-wrap: wrap;
+}
+
+.list-block-item:nth-last-of-type(3) {
+    padding-right: 226px;   
+}
+
+.list-block-item:nth-last-of-type(2) {
+    padding-right: 284px;   
 }
 
 @media only screen and (max-width: 768px) {
