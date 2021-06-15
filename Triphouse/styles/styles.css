@@ -14,7 +14,6 @@
 }
 
 .tittle {
-    padding-bottom: 20px;
     padding-top: 120px;
     text-align: center;
     font-style: normal;
@@ -202,6 +201,9 @@ label {
 }
 
 footer {
+    max-width: 1440px;
+    padding: 0 16px;
+    margin: 0 auto;
     background: #10367C;
 }
 
@@ -227,8 +229,7 @@ li {
 }
 
 .copyright {
-    padding-bottom: 120px;
-    padding-top: 50px;
+    padding: 50px 0 120px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
