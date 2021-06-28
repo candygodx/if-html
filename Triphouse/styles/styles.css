@@ -23,7 +23,7 @@
     color: #383838;
 }
 
-.tittle::after {
+/* .tittle:after {
     content: " ";
     display: block;
     width: 100px;
@@ -33,7 +33,7 @@
     margin-bottom: 80px;
     border: none;
     background: #F5BD41;
-}
+} */
 
 .icon-wrapper {
     height: 100px;
@@ -48,7 +48,7 @@
 
 .row {
     display: flex;
-    margin-bottom: 120px;
+    padding: 120px 0;
     flex-wrap: wrap;
 }
 
@@ -106,12 +106,10 @@ h1 {
 }
 
 .search-block {
-    width: 1232px;
     padding-top: 196px;
 }
 
 .user-request {
-    height: 64px;
     display: flex;
     background-color: #FFFFFF;
     border-radius: 8px;
@@ -145,30 +143,37 @@ label {
 }
 
 .request-item:nth-of-type(1) {
-    width: 467px;
-    padding-left: 24px;
+    width: 100%;
+    flex: 0 0 38%;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .request-item:nth-of-type(2) {
-    width: 259px;
+    width: 100%;
+    flex: 0 0 21%;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .request-item:nth-of-type(3) {
-    width: 314px;
+    width: 100%;
+    flex: 0 0 25.5%;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .search-button {
-    width: 192px;
-    background-color: #3077C6;
-    color: #FFFFFF;
-    border: 3px solid #3077C6;
+    flex: 0 1 20%;
+    height: 64px;
+    border: 0;
     border-radius: 8px;
-    font-style: normal;
-    font-size: 24px;
+    background-color: #3077C6;
     font-weight: 500;
+    font-size: 24px;
     line-height: 28px;
-    letter-spacing: 0em;
-    text-align: center;
+    color: #FFFFFF;
 }
 
 .search-block-items {
@@ -181,10 +186,13 @@ label {
 }
 
 .search-block-download {
-    width: 270px;
-    margin: 120px auto 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding-top: 120px;
+}
+
+.search-block-download-item {
+    margin-left: 16px;
 }
 
 .line::after {
@@ -201,7 +209,6 @@ label {
 }
 
 footer {
-    max-width: 1440px;
     padding: 0 16px;
     margin: 0 auto;
     background: #10367C;
@@ -251,6 +258,139 @@ li {
     padding-right: 284px;   
 }
 
+.background {
+    background: #EAF0F9;
+}
+
+.homes {
+    padding-top: 104px;
+    display: flex;
+}
+
+.homes_item {
+    width: 25%;
+    padding: 0 8px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.homes-regions-text {
+    text-decoration: none;
+    margin-top: 24px;
+    font-size: 24px;
+    color: #3077C6;
+}
+
+.homes_item-text {
+    margin-top: 24px;
+    font-size: 24px;
+    color: #BFBFBF;
+}
+
+.tab {
+    display: flex;
+    padding-top: 104px;
+}
+
+.tab_button:nth-last-of-type(3)  {
+    width: 192px;
+    height: 64px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #F3F3F4;
+    font-size: 24px;
+    color: #383838;
+}
+
+.tab_button:nth-last-of-type(2)  {
+    width: 192px;
+    height: 64px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #F3F3F4;
+    font-size: 24px;
+    color: #383838;
+}
+
+.tab_button:nth-last-of-type(1)  {
+    width: 238px;
+    height: 64px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #F3F3F4;
+    font-size: 24px;
+    color: #383838;
+}
+
+.tab_button:hover {
+    background-color: #3077C6;
+}
+
+.tab_button-text {
+    text-decoration: none;
+    color: #383838;
+}
+
+.tab_button-text:hover {
+    color: #FFFFFF;
+}
+
+.regions {
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.regions-item {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.sign_up {
+    height: 200px;
+    display: flex;
+    background: #EAF0F9;
+}
+
+.sign_up-item {
+    display: flex;
+    padding-left: 24px;
+}
+
+.sign_up-item1 {
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign_up_button {
+    background: #FFFFFF;
+    border: 1px solid #3077C6;
+    border-radius: 8px;
+    width: 128px;
+    height: 48px;
+}
+
+.sign_up_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #383838;
+}
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 768px) {
     .item {
         width: 100%;
@@ -261,4 +401,3 @@ li {
     .copyright {
     padding-left: 100px;
     }
-}
