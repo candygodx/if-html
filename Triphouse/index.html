@@ -11,160 +11,200 @@
     <header>
         <div class="container">
             <nav class="nav">
-                <div>
-                    <img src="./images/logo_vector.svg" alt="TripHouse">
-                </div>
+                <img class="logo" src="./images/logo_vector.svg" alt="TripHouse">
                 <div class="nav-content">
-                    <a class="nav-content-text line" href="#">Stays</a>
-                    <a class="nav-content-text" href="#">Attractions</a>
-                    <img class="nav-content-icon" src="./images/Night.svg" alt="Night-subject">
-                    <img src="./images/AccountCircle.svg" alt="account">
+                    <div class="nav-content_item">
+                        <a class="nav-content_text nav-content_underline" href="#">Stays</a>
+                        <a class="nav-content_text" href="#">Attractions</a>
+                    </div>
+                    <div class="nav-content_icon">
+                        <img class="nav-content_icon-night" src="./images/Night.svg" alt="Night-subject">
+                        <img class="nav-content_icon-account" src="./images/AccountCircle.svg" alt="account">
+                        <img class="nav-content_icon-menu" src="./images/menu.svg" alt="menu">
+                    </div>   
                 </div>
             </nav>
             <div class="search-block">
                 <h1>Discover stays <br>to live, work or just relax</h1>
-                <div class="search-block-items">
-                    <label for="search-item">Your destination or hotel name</label>
-                    <label class="date-name" for="date-item">Check-in &#x2013; Check-out</label>
-                </div>
-                <form class="user-request" action="/" method="get">
-                    <input id="search-item" class="request-item" type="text" placeholder="New York">
-                    <input id="date-item" class="request-item" type="date">
-                    <input class="request-item" type="text" placeholder="2 Adults — 0 Children — 1 Room">
-                    <button class="search-button">Search</button>
+                <form class="search-form" action="/" method="GET">
+                    <div class="search-form_group destination">
+                        <img class="loupe-icon" src="./images/loupe.svg" alt="loupe">
+                        <input type="text" name="destination" id="destination" class="destination_input" placeholder=" ">
+                        <label for="destination" class="destination_label">Your destination or hotel name</label>
+                    </div>
+                    <div class="search-form_group check">
+                        <input type="text" name="check-in" id="check-in" class="check_input" placeholder=" ">
+                        <label for="check-in" class="check_label">Check-in date</label>
+                        <input type="text" name="check-out" id="check-out" class="check_input" placeholder=" ">
+                        <label for="check-out" class="check_label">Check-out date</label>
+                        <label for="check-in" class="check_label check_label-desktop">Check-in - Check-out</label>
+                    </div>
+                    <div class="search-form_group other-info">
+                        <input type="text" name="adults" id="adults" class="other-info_input" placeholder=" ">
+                        <label for="adults" class="other-info_label">Adults</label>
+                        <span class="divider"></span>
+                        <input type="text" name="children" id="children" class="other-info_input" placeholder=" ">
+                        <label for="children" class="other-info_label">Children</label>
+                        <span class="divider"></span>
+                        <input type="text" name="rooms" id="rooms" class="other-info_input" placeholder=" ">
+                        <label for="rooms" class="other-info_label">Rooms</label>
+                        <label for="adults" class="other-info_label other-info_label-desktop">2 Adults - 0 Children - 1 Room</label>
+                    </div>
+                    <button class="search-form_button" type="submit">Search</button>
                 </form>
-                  <div class="search-block-download">
-                      <div class="search-block-download-item">
+                <div class="search-block-download">
+                    <div>
                         <a href="#" target="_blank" class="download-item"><img src="./images/andoird_download.svg" alt="google-play-download"></a>
-                      </div>
-                      <div class="search-block-download-item">
+                    </div>
+                    <div class="search-block-download-item">
                         <a href="#" target="_blank" class="download-item"><img src="./images/apple_download.svg" alt="apple-download"></a>
-                      </div>
-                  </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
+    <div class="container">
+        <h2 class="tittle line">What do we offer</h2>
+        <div class="row">
+            <div class="item">
+                <div class="icon-wrapper">
+                    <img src="./images/headsetsvg.svg" alt="headset">
+                </div>
+                <span class="item-text">Support 24/7</span>
+            </div>
+            <div class="item">
+                <div class="icon-wrapper">
+                    <img src="./images/commentsvg.svg" alt="coment">
+                </div>
+                <span class="item-text">Communicate directly</span>
+            </div>
+            <div class="item">
+                <div class="icon-wrapper">
+                    <img src="./images/booksvg.svg" alt="book">
+                </div>
+                <span class="item-text">Book online</span>
+            </div>
+            <div class="item">
+                <div class="icon-wrapper">
+                    <img src="./images/likesvg.svg" alt="like">
+                </div>
+                <span class="item-text">Real guest reviews</span>
+            </div>
+        </div>
+    </div>
+    <div class="background">
         <div class="container">
-            <h2 class="tittle">What do we offer</h2>
-            <div class="row">
-                <div class="item">
-                    <div class="icon-wrapper">
-                        <img src="./images/headsetsvg.svg" alt="headset">
-                    </div>
-                    <span class="item-text">Support 24/7</span>
+            <h2 class="tittle">Homes guests loves</h2>
+            <div class="homes">
+                <div class="homes_item">                   
+                    <img class="homes_item-icon" src="./images/russia.png" alt="russia">                    
+                    <a class="homes-regions-text" href="#">Hotel Leopold</a>
+                    <span class="homes_item-text">Saint Petersburg, Russia</span>
                 </div>
-                <div class="item">
-                    <div class="icon-wrapper">
-                        <img src="./images/commentsvg.svg" alt="coment">
-                    </div>
-                    <span class="item-text">Communicate directly</span>
+                <div class="homes_item">
+                    <img class="homes_item-icon" src="./images/spain.png" alt="spain">
+                    <a class="homes-regions-text" href="#">Apartment Sunshine</a>
+                    <span class="homes_item-text">Santa  Cruz de Tenerife,<br> Spain</span>
                 </div>
-                <div class="item">
-                    <div class="icon-wrapper">
-                        <img src="./images/booksvg.svg" alt="book">
-                    </div>
-                    <span class="item-text">Book online</span>
+                <div class="homes_item">
+                    <img src="./images/slowakia.png" alt="slowakia">
+                    <a class="homes-regions-text" href="#">Villa Kunerad</a>
+                    <span class="homes_item-text">Vysokie Tatry, Slowakia</span>
                 </div>
-                <div class="item">
-                    <div class="icon-wrapper">
-                        <img src="./images/likesvg.svg" alt="like">
-                    </div>
-                    <span class="item-text">Real guest reviews</span>
+                <div class="homes_item">
+                    <img src="./images/germany.png" alt="germany">
+                    <a class="homes-regions-text" href="#">Hostel Friendship</a>
+                    <span class="homes_item-text">Berlin, Germany</span>
                 </div>
             </div>
         </div>
-        <div class="background">
-            <div class="container">
-                <h2 class="tittle">Homes guests loves</h2>
-                <div class="homes">
-                    <div class="homes_item">                   
-                        <img src="./images/russia.png" alt="russia">                    
-                        <a class="homes-regions-text" href="#">Hotel Leopold</a>
-                        <span class="homes_item-text">Saint Petersburg, Russia</span>
-                    </div>
-                    <div class="homes_item">
-                        <img src="./images/spain.png" alt="spain">
-                        <a class="homes-regions-text" href="#">Apartment Sunshine</a>
-                        <span class="homes_item-text">Santa  Cruz de Tenerife,<br> Spain</span>
-                    </div>
-                    <div class="homes_item">
-                        <img src="./images/slowakia.png" alt="slowakia">
-                        <a class="homes-regions-text" href="#">Villa Kunerad</a>
-                        <span class="homes_item-text">Vysokie Tatry, Slowakia</span>
-                    </div>
-                    <div class="homes_item">
-                        <img src="./images/germany.png" alt="germany">
-                        <a class="homes-regions-text" href="#">Hostel Friendship</a>
-                        <span class="homes_item-text">Berlin, Germany</span>
-                    </div>
-                </div>
+    </div>
+    <div class="container">
+        <h2 class="tittle">The best destinations</h2>
+        <div class="tab">
+            <button class="tab_button"><a class="tab_button-text" href="#">Regions</a></button>
+            <button class="tab_button"><a class="tab_button-text" href="#">Cities</a></button>
+            <button class="tab_button"><a class="tab_button-text" href="#">Places <span id="cut"> of interest</span></a></button>
+        </div>
+        <div class="regions">
+            <div class="regions-item">
+                <img class="regions-item_icon" src="./images/best-maldives.png" alt="maldives">
+                <a class="homes-regions-text" href="#">Maldives</a>
+            </div>
+            <div class="regions-item">
+                <img class="regions-item_icon" src="./images/best-spain.png" alt="spain">
+                <a class="homes-regions-text" href="#">Spain</a>
+            </div>
+            <div class="regions-item">
+                <img src="./images/best-norway.png" alt="norway">
+                <a class="homes-regions-text" href="#">Norway</a>
+            </div>
+            <div class="regions-item">
+                <img src="./images/best-island.png" alt="island">
+                <a class="homes-regions-text" href="#">Island</a>
             </div>
         </div>
-        <div class="container">
-            <h2 class="tittle">The best destinations</h2>
-            <div class="tab">
-                <button class="tab_button"><a class="tab_button-text" href="#">Regions</a></button>
-                <button class="tab_button"><a class="tab_button-text" href="#">Cities</a></button>
-                <button class="tab_button"><a class="tab_button-text" href="#">Places of interest</a></button>
+    </div>
+    <div class="container">
+        <div class="signup-block">
+            <div class="signup-block_icon">
+                <img src="./images/user.svg" alt="user">
             </div>
-            <div class="regions">
-                <div class="regions-item">
-                    <img src="./images/best-maldives.png" alt="maldives">
-                    <a class="homes-regions-text" href="#">Maldives</a>
-                </div>
-                <div class="regions-item">
-                    <img src="./images/best-spain.png" alt="spain">
-                    <a class="homes-regions-text" href="#">Spain</a>
-                </div>
-                <div class="regions-item">
-                    <img src="./images/best-norway.png" alt="norway">
-                    <a class="homes-regions-text" href="#">Norway</a>
-                </div>
-                <div class="regions-item">
-                    <img src="./images/best-island.png" alt="island">
-                    <a class="homes-regions-text" href="#">Island</a>
-                </div>
+            <div class="signup-block_item">
+                <span class="signup-block_text">Sign up and get 20% off your first booking</span>
+                <button class="signup-block_button" type="submit">Sign up</button>              
             </div>
         </div>
-        <div class="container">
-            <div class="sign_up">
-                <div class="sign_up-item">
-                    <img src="./images/user.svg" alt="user">
-                </div>
-                <div class="sign_up-item1">
-                    <div>
-                        <span class="sign_up_text">Sign up and get 20% off your first booking</span>
-                    </div>
-                    <button class="sign_up_button">Sign up</button>              
-                </div>
+    </div>
+    <div class="signup-block-mobbile">
+        <img src="./images/cancel.svg" alt="cancel">
+        <img src="./images/cubelogo.svg" alt="logo">
+        <span class="signup-block-mobbile_text">Sign up in the app and get 20% off your first booking</span>
+        <a class="signup-block-mobbile_install" href="#">Install</a>
+    </div>
+    <div class="container">
+        <h2 class="tittle">Guests reviews</h2>
+        <div class="reviews">
+            <div class="reviews-block">
+                <div class="reviews-block_item"><a class="reviews-block_item-text" href="#">From 250 USD</a></div>
+            </div>
+            <div class="reviews-block">
+                <div class="reviews-block_item"><a class="reviews-block_item-text" href="#">From 40 USD</a></div>
+            </div>
+            <div class="reviews-block">
+                <div class="reviews-block_item"><a class="reviews-block_item-text" href="#">From 100 USD</a></div>
             </div>
         </div>
+    </div>
     <footer>
         <div class="container">
-            <div class="list-block">
-                <ul class="list-block-item">
-                    <li><a class="list-block-columns-name" href="#">About</a></li>
-                    <li><a class="list-block-text" href="#">How Triphouse works</a></li>
-                    <li><a class="list-block-text" href="#">Careers</a></li>
-                    <li><a class="list-block-text" href="#">Privacy</a></li>
-                    <li><a class="list-block-text" href="#">Terms</a></li>
-                </ul>
-                <ul class="list-block-item">
-                    <li><a class="list-block-columns-name" href="#">Property types</a></li>
-                    <li><a class="list-block-text" href="#">Guest houses</a><li>
-                    <li><a class="list-block-text" href="#">Hotels</a></li>
-                    <li><a class="list-block-text" href="#">Apartments</a></li>
-                    <li><a class="list-block-text" href="#">Villas</a></li>
-                    <li><a class="list-block-text" href="#">Holiday homes</a></li>
-                    <li><a class="list-block-text" href="#">Hostels</a></li>
-                </ul>
-                <ul class="list-block-item">
-                    <li><a class="list-block-columns-name" href="#">Support</a></li>
-                    <li><a class="list-block-text" href="#">Contact Customer Service</a></li>
-                    <li><a class="list-block-text" href="#">FAQ</a></li>
-                </ul>
+            <div class="footer-block">
+                <img class="footer-block_content-logo" src="./images/tripho.svg" alt="logo">
+                <div class="footer-block_content">
+                    <ul class="footer-block_content-item">
+                        <li><a class="list-block-columns-name" href="#">About</a></li>
+                        <li><a class="list-block-text" href="#">How Triphouse works</a></li>
+                        <li><a class="list-block-text" href="#">Careers</a></li>
+                        <li><a class="list-block-text" href="#">Privacy</a></li>
+                        <li><a class="list-block-text" href="#">Terms</a></li>
+                    </ul>
+                    <ul class="footer-block_content-item">
+                        <li><a class="list-block-columns-name" href="#">Property types</a></li>
+                        <li><a class="list-block-text" href="#">Guest houses</a><li>
+                        <li><a class="list-block-text" href="#">Hotels</a></li>
+                        <li><a class="list-block-text" href="#">Apartments</a></li>
+                        <li><a class="list-block-text" href="#">Villas</a></li>
+                        <li><a class="list-block-text" href="#">Holiday homes</a></li>
+                        <li><a class="list-block-text" href="#">Hostels</a></li>
+                    </ul>
+                    <ul class="footer-block_content-item">
+                        <li><a class="list-block-columns-name" href="#">Support</a></li>
+                        <li><a class="list-block-text" href="#">Contact Customer Service</a></li>
+                        <li><a class="list-block-text" href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <span class="copyright">&copy; 2020 Triphouse, Inc. All rights reserved</span>
             </div>
-            <h3 class="copyright">&copy; 2020 Triphouse, Inc. All rights reserved</h3>
         </div>
     </footer>
 </body>
