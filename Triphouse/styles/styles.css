@@ -162,6 +162,7 @@ input {
     width: 100%;
     border-radius: 8px;
     display: flex;
+    border: 3px solid #F5BD41;
 }
 
 .check_label {
@@ -309,12 +310,12 @@ li {
     background: #EAF0F9;
 }
 
-.homes {
+.homes-block {
     padding-top: 104px;
     display: flex;
 }
 
-.homes_item {
+.homes-block_item {
     width: 25%;
     padding: 0 8px;
     margin-bottom: 120px;
@@ -322,14 +323,14 @@ li {
     flex-direction: column;
 }
 
-.homes-regions-text {
+.homes-block_item-text-regions {
     text-decoration: none;
     margin-top: 24px;
     font-size: 24px;
     color: #3077C6;
 }
 
-.homes_item-text {
+.homes-block_item-text {
     margin-top: 24px;
     font-size: 24px;
     color: #BFBFBF;
@@ -386,12 +387,12 @@ li {
     color: #FFFFFF;
 }
 
-.regions {
+.regions-block {
     padding-top: 64px;
     display: flex;
 }
 
-.regions-item {
+.regions-block_item {
     width: 25%;
     padding: 0 8px;
     margin-bottom: 120px;
@@ -450,7 +451,7 @@ li {
     column-gap: 16px;
 }
 
-.reviews-block {
+.reviews-block_content {
     max-width: 400px;
     width: 100%;
     height: 400px;
@@ -459,16 +460,26 @@ li {
     justify-content: flex-end;
 }
 
-.reviews-block:nth-of-type(1) {
+.reviews-content_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.bali {
     background-image: url(../images/bali.svg);
 }
 
-.reviews-block:nth-of-type(2) {
+.rotterdam {
     background-image: url(../images/rotterdam.svg);
 }
 
-.reviews-block:nth-of-type(3) {
+.ourika {
     background-image: url(../images/Ourika.svg);
+}
+
+.navigation {
+    display: none;
 }
 
 .reviews-block_item {
@@ -485,17 +496,95 @@ li {
     text-decoration: none;
 }
 
+.reviews-content_info_location {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
 
+.reviews-content_info_rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 8px;
+}
 
+.reviews-content_info_rating-image {
+    max-width: 48px;
+    width: 100%;
+    height: 32px;
+}
 
+.reviews-content_info_location-apartments-text {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3077C6; 
+}
 
+.reviews-content_info_location-place-text {
+    font-size: 18px;
+    line-height: 21px;
+    color: #3077C6;
+}
 
+.reviews-content_info_location-reviews-text {
+    font-size: 14px;
+    line-height: 16px;
+    color: #BFBFBF;
+}
 
+.reviews-content_user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.reviews-content_user {
+    display: flex;
+    column-gap: 15px;
+    padding: 0 24px 24px;
+}
 
+.reviews-content_user-info-name {
+    font-size: 18px;
+    line-height: 21px;
+}
 
+.reviews-content_text {
+    max-width: 400px;
+    width: 100%;
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 120px;
+}
 
+.flag-ukraine {
+    max-width: 83px;
+    width: 100%;
+    height: 21px;
+}
 
+.flag-USA {
+    max-width: 57px;
+    width: 100%;
+    height: 21px;
+}
+
+.flag-Germany {
+    max-width: 95px;
+    width: 100%;
+    height: 21px;
+}
+
+.reviews-block:nth-child(2) {
+    background-color: #EAF0F9;
+}
+
+.reviews-block:nth-child(3) {
+    background-color: #EAF0F9;
+}
 
 .signup-block-mobbile {
     display: none;
@@ -521,6 +610,10 @@ li {
         height: unset;
         background-color: #F5BD41;
         padding: 8px;
+    }
+
+    header {
+        height: 950px;
     }
 
     .search-block-download {
@@ -560,12 +653,12 @@ li {
 
     .loupe-icon {
         display: inline-block;
-            position: absolute;
-            width: 16px;
-            height: 16px;
-            color: #BFBFBF;
-            top: 16px;
-            left: 12px;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        color: #BFBFBF;
+        top: 16px;
+        left: 12px;
     }
 
     .search-form input.destination_input {
@@ -656,6 +749,10 @@ li {
         margin-bottom: 40px;
     }
 
+    header {
+        height: 750px;
+    }
+
     .nav-content_icon-menu {
         display: inline-block;
     }
@@ -666,6 +763,18 @@ li {
 
     .nav-content_icon-menu-icon {
         display: inline-block;
+    }
+
+    .signup-block_text {
+        font-size: 12px;
+    }
+
+    .tab {
+        padding-top: 50px;
+    }
+
+    .tittle {
+        padding-top: 60px;
     }
     
     .row {
@@ -681,27 +790,31 @@ li {
         display: none;
     }
 
-    .homes_item {
+    .homes-block_item {
         width: 50%;
     }
 
-    .homes div:nth-child(3) {
+    .homes-block {
+        padding-top: 50px;
+    }
+
+    .homes-block div:nth-child(3) {
         display: none;
     }
 
-    .homes div:nth-child(4) {
+    .homes-block div:nth-child(4) {
         display: none;
     }
 
-    .regions div:nth-child(3) {
+    .regions-block div:nth-child(3) {
         display: none;
     }
 
-    .regions div:nth-child(4) {
+    .regions-block div:nth-child(4) {
         display: none;
     }
     
-    .regions-item {
+    .regions-block_item {
         width: 50%;
     }
 
@@ -740,6 +853,23 @@ li {
         margin: unset;
         width: unset;
     }
+
+    .reviews-block:nth-child(2) {
+        display: none;
+    }
+
+    .reviews-block:nth-child(3) {
+        display: none;
+    }
+
+    .reviews {
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    .reviews-content_text {
+        margin-bottom: 60px;
+    }
 }
 
 @media only screen and (max-width: 360px) {
@@ -773,28 +903,28 @@ li {
 
     .tittle {
         padding-top: 40px;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 28px;
         line-height: 33px;
     }
 
-    .homes {
+    .homes-block {
         padding-top: 32px;
     }
 
-    .homes_item-icon {
+    .homes-block_item-icon {
         width: 156px;
         height: 156px;
     }
 
-    .homes-regions-text {
+    .homes-block_item-text-regions {
         font-weight: normal;
         font-size: 12px;
         line-height: 14px;
         margin-top: 8px;
     }
 
-    .homes_item-text {
+    .homes-block_item-text {
         font-weight: normal;
         font-size: 12px;
         line-height: 14px;
@@ -806,12 +936,12 @@ li {
         column-gap: 16px;
     }
 
-    .regions-item_icon {
+    .regions-block_item_icon {
         width: 156px;
         height: 156px;
     }
 
-    .regions {
+    .regions-block {
         padding-top: 24px;
     }
     
@@ -846,5 +976,103 @@ li {
 
     .signup-block {
         display: none;
+    }
+
+    .signup-block-mobbile {
+        padding: 24px 16px;
+    }
+
+    #Guests-remove {
+        display: none;
+    }
+
+    .homes-block_item {
+        margin-bottom: 40px;
+    }
+
+    .container:nth-child(6) {
+        background-color: #EAF0F9;
+    }
+
+    .reviews {
+        padding-top: 32px;
+    }
+
+    .reviews-block_content {
+        max-width: 327px;
+        width: 100%;
+        height: 325px;
+    }
+
+    .reviews-content_info_location {
+        row-gap: 8px;
+    }
+
+    .reviews-content_info_rating {
+        row-gap: 4px;
+    }
+
+    .reviews-content_info {
+        padding: 12px 0px;
+    }
+
+    .reviews-content_user {
+        padding: 12px 0 16px;
+    }
+
+    .reviews-content_text {
+        padding: unset;
+    }
+
+    .navigation {
+        display: inline-block;
+        padding: 0 0 40px 136px;
+        
+    }
+
+    .reviews-content_text {
+        margin-bottom: 32px;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .reviews-content_info_location-apartments-text {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .reviews-content_info_location-place-text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .reviews-content_user-info-name {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .flag-ukraine {
+        max-width: 74px;
+        height: 17px;
+    }
+
+    .reviews-content_user-logo {
+        max-width: 43px;
+        height: 43px;
+    }
+
+    .reviews-content_info_rating-image {
+        max-width: 39px;
+        height: 26px;
+    }
+
+    .reviews-content_info_location-reviews-text {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .regions-block_item {
+        margin-bottom: 40px;
     }
 }
